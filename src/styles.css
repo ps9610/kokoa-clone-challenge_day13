@@ -1,0 +1,169 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans" sans-serif;
+  font-size: 12px;
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.screen {
+  position: relative;
+  z-index: 1;
+  width: 320px;
+  height: 700px;
+  border: 7px solid #007752;
+}
+
+.screen::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(image/star_takeout.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  content: "";
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.header {
+  margin: 15px 20px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.profile .profile_header {
+  margin: 10px 20px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile .profile_header i {
+  opacity: 0.4;
+}
+
+.profile_header .header_title {
+  font-size: 14px;
+}
+
+.profile_info {
+  position: relative;
+  text-align: center;
+  vertical-align: center;
+}
+
+.profile_info .info__title-wrapper {
+  display: inline-block;
+  margin-top: 110px;
+}
+
+.profile_info .info__title-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #007752;
+}
+
+.profile_info .info__title-name,
+.profile_info .info__title-address {
+  margin-bottom: 10px;
+}
+
+.info__title-wrapper img {
+  margin-bottom: 10px;
+  border-radius: 50% 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.profile_sns {
+  margin: 15px 15px 20px 15px;
+}
+
+.profile_sns .sns__btns {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.sns__btns .sns__btns-left,
+.sns__btns .sns__btns-right {
+  color: white;
+  background-color: #007752;
+  padding: 13px 35px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.sns__btns .sns__btns-left {
+  color: black;
+  background-color: white;
+}
+
+.sns__follows {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  opacity: 0.7;
+}
+
+.sns__follow {
+  display: inline-block;
+  text-align: center;
+  font-size: 13px;
+}
+
+.sns__follow .follow__content {
+  display: block;
+}
+
+.nav {
+  position: absolute;
+  width: 80%;
+  right: 0;
+  bottom: 0;
+  margin: 20px 30px;
+}
+
+.nav::before {
+  position: absolute;
+  width: 50%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: -13px;
+  background-color: #9a9da2;
+  content: "";
+  height: 3px;
+  z-index: 2;
+}
+
+.nav .nav_icons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  opacity: 0.4;
+}
