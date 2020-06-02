@@ -160,7 +160,7 @@ ul {
   z-index: 2;
 }
 
-.nav .nav_icons {
+.nav .nav__icons {
   position: relative;
   display: flex;
   justify-content: space-between;
